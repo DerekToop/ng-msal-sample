@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+</div>
+<h2>Here are links to start: </h2>
+<ul>
+  <li *ngIf="!loggedIn">
+    <h2>
+      <a href="javascript:void(0);" (click)="login()"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+    </h2>
+  </li>
+  <li *ngIf="loggedIn">
+    <h2>
+      <a href="javascript:void(0);" (click)="logout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+    </h2>
+  </li>
+  <li *ngIf="loggedIn">
+    <h2>
+      <a href="javascript:void(0);" (click)="vendors()"><span class="glyphicon glyphicon-log-out"></span> Vendors</a>
+    </h2>
+  </li>
+</ul>
+
